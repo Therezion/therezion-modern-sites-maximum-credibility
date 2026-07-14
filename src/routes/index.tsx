@@ -186,14 +186,9 @@ function Header() {
           <div className="h-10 w-10 overflow-hidden rounded-xl bg-white/5 p-1 ring-1 ring-white/15">
             <img src={logoTz} alt="Therezion Logo" className="h-full w-full object-contain" />
           </div>
-          <div className="flex flex-col">
-            <span className="font-display text-lg font-bold tracking-tight text-white">
-              Therezion
-            </span>
-            <span className="text-[10px] font-medium tracking-wider text-primary uppercase">
-              Maximum Credibility
-            </span>
-          </div>
+          <span className="font-display text-lg font-bold tracking-tight text-white">
+            Therezion
+          </span>
         </a>
 
         <nav className="hidden items-center gap-7 text-sm font-medium text-white/75 lg:flex">
@@ -274,7 +269,6 @@ function Hero({ prefersReduced }: { prefersReduced: boolean }) {
           className="mx-auto max-w-4xl text-center"
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white/90 backdrop-blur-md">
-            <Sparkles className="h-3.5 w-3.5 text-primary" />
             <span>Autoridade • Confiança • Resultados</span>
           </div>
 
@@ -284,8 +278,7 @@ function Hero({ prefersReduced }: { prefersReduced: boolean }) {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg md:text-xl">
-            Desenvolvemos sites profissionais e estratégicos com foco em conversão no WhatsApp.
-            Sem burocracia, sem agências tradicionais e com entrega rápida entre{" "}
+            Desenvolvemos sites profissionais e estratégicos. Sem burocracia, sem agências tradicionais e com entrega rápida entre{" "}
             <strong className="font-semibold text-white">3 e 7 dias úteis</strong>.
           </p>
 
@@ -297,17 +290,6 @@ function Hero({ prefersReduced }: { prefersReduced: boolean }) {
             <CTAButton href="#portfolio" variant="ghost">
               Ver Projetos Prontos
             </CTAButton>
-          </div>
-
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-white/60 sm:text-sm">
-            <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="h-4 w-4 text-primary" />
-              Não vende diretamente: foco em conversão no WhatsApp
-            </span>
-            <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="h-4 w-4 text-primary" />
-              Atendimento Seg a Seg das 08h às 18h
-            </span>
           </div>
 
           {/* Grid de Diferenciais / Garantias da oferta */}
@@ -369,8 +351,8 @@ function Benefits() {
     },
     {
       icon: Rocket,
-      title: "Focado no WhatsApp",
-      text: "O site não tenta vender direto de forma fria: ele é estrategicamente desenhado para conduzir o visitante até o WhatsApp para agendar uma reunião.",
+      title: "Estruturado para Conversão",
+      text: "Cada projeto é estruturado estrategicamente para conduzir o visitante ao objetivo definido pelo negócio, seja entrar em contato, preencher um formulário, solicitar um orçamento, realizar uma compra ou qualquer outra conversão desejada.",
     },
     {
       icon: Smartphone,
@@ -442,7 +424,7 @@ function Portfolio() {
     {
       img: portfolio2,
       title: "Gastronomia & Experiência Premium",
-      tag: "Landing Page com Conversão no WhatsApp",
+      tag: "Landing Page de Alta Conversão",
       w: 1200,
       h: 900,
     },
@@ -522,13 +504,13 @@ function Process() {
   const steps = [
     {
       icon: MessageCircle,
-      title: "1. Briefing Direto no WhatsApp",
-      text: "Conversamos pelo WhatsApp para entender o seu negócio, os seus diferenciais e o objetivo exato da sua marca. Zero formulário cansativo.",
+      title: "1. Briefing Estratégico",
+      text: "Conversamos para entender o seu negócio, seus diferenciais e os objetivos da sua marca. O contato pode acontecer pelo WhatsApp, formulário ou outro canal, conforme a necessidade do projeto.",
     },
     {
       icon: FileText,
       title: "2. Planejamento Estratégico",
-      text: "Estruturamos as seções ideais, os argumentos e a rota do visitante para que toda a navegação conduza naturalmente para uma reunião com você.",
+      text: "Estruturamos as seções ideais, os argumentos e a rota do visitante para que toda a navegação conduza naturalmente ao objetivo principal do projeto.",
     },
     {
       icon: Palette,
@@ -634,7 +616,7 @@ function Comparison() {
       eyebrow="O Diferencial"
       title={
         <>
-          Why Therezion × <span className="text-gradient-orange">Agência Tradicional</span>
+          Por que escolher a Therezion × <span className="text-gradient-orange">Agência Tradicional</span>
         </>
       }
       intro="A mesma qualidade estética e técnica de grandes agências, mas com agilidade, transparência e investimento inteligente."
@@ -758,10 +740,10 @@ function Included() {
     { icon: Smartphone, title: "Totalmente Responsivo", text: "Perfeito em qualquer celular, tablet ou desktop." },
     { icon: Search, title: "SEO no Google ativado", text: "Estrutura pronta para ser encontrada por novos clientes." },
     { icon: Globe, title: "Publicação no Domínio", text: "Configuração completa de DNS e SSL sem custo extra." },
-    { icon: MessageCircle, title: "Botão WhatsApp Flutuante", text: "Converte visitas diárias em reuniões reais." },
+    { icon: Rocket, title: "Integração de Conversão", text: "WhatsApp, formulários ou sistemas conectados ao seu objetivo." },
     { icon: Layers, title: "1 Rodada de Ajustes Grátis", text: "Ajustamos textos e cores até sua aprovação." },
     { icon: Award, title: "Garantia de 7 Dias", text: "Proteção total e transparência do início ao fim." },
-    { icon: LifeBuoy, title: "15 Dias de Acompanhamento", text: "Suporte próximo pós-entrega direto pelo WhatsApp." },
+    { icon: LifeBuoy, title: "15 Dias de Acompanhamento", text: "Suporte próximo pós-entrega direto com nossa equipe." },
   ];
 
   return (
@@ -822,8 +804,8 @@ function FAQ() {
       a: "Sim! Desenvolvemos com foco 100% mobile-first (responsivo para celulares, tablets e computadores) e com toda a estrutura semântica de SEO básico ativada para que o Google indexe sua página rapidamente.",
     },
     {
-      q: "O site vende sozinho ou preciso atender no WhatsApp?",
-      a: "O objetivo estratégico do site não é tentar fechar uma venda fria sozinho, e sim gerar uma conversa qualificada no seu WhatsApp para você agendar uma reunião. Toda a navegação e os botões conduzem o visitante a clicar e falar com você.",
+      q: "O site pode ser configurado para qualquer tipo de objetivo ou conversão?",
+      a: "Sim! A Therezion desenvolve sites estratégicos sob medida. O objetivo de conversão é definido conforme a sua necessidade, podendo ser direcionamento para o WhatsApp, preenchimento de formulário, pedido de orçamento, agendamentos, cadastros, compras ou qualquer outro canal que traga mais resultado para o seu negócio.",
     },
     {
       q: "Quais são os dias e horários de atendimento da Therezion?",
@@ -970,8 +952,8 @@ function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
-              Sites profissionais para empresas que querem transmitir autoridade, passar
-              mais confiança e agendar reuniões qualificadas no WhatsApp.
+              Sites profissionais e estratégicos para empresas que querem transmitir autoridade, passar
+              mais confiança e conquistar mais clientes em todos os canais digitais.
             </p>
             <div className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white/[0.04] px-4 py-2 text-xs text-white/80 ring-1 ring-white/10">
               <Clock className="h-4 w-4 text-primary" />
