@@ -473,6 +473,17 @@ function Portfolio() {
       intro="Desenvolvemos sites visuais, elegantes e funcionais. Sem excesso de cores ou animações pesadas, mantendo o foco absoluto no que importa: valorizar sua marca."
       dark
     >
+      <div className="mb-8 flex justify-start">
+        <a
+          href="https://www.behance.net/chatgenius"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2.5 rounded-full border border-white/40 bg-transparent px-6 py-3 font-display text-sm font-semibold tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]"
+        >
+          <span>Acesse o portfólio</span>
+          <ArrowRight className="h-4 w-4" />
+        </a>
+      </div>
       <div className="grid gap-8 md:grid-cols-3">
         {projects.map((p, i) => {
           const content = (
